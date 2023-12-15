@@ -14,6 +14,7 @@
   <div :id="headingID">new heading</div>
   <button :disabled="isDisabled">bind this</button>
   <h2 class="underline">underline text</h2>
+  <!-- add extra name to class  -->
   <h1 class="underlined" :class="status">status</h1>
   <h2 :class="ispromoted && 'promoted'">promoted movie</h2>
   <!-- conditional style -->
