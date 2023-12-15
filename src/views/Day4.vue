@@ -10,8 +10,12 @@
 </script>
 
 <template>
+    <!-- use template tag with vfor and v-if  -->
     <div>
-        <h1 v-for="name in names" :key = "name">{{ name }}</h1>
+        <template v-for="name in names" :key = "name">
+            <h1 v-if = " name === 'anand' " >{{ name }}</h1>
+        </template>
+        
     </div>
 </template>
 
