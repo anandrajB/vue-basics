@@ -17,6 +17,8 @@
             add items
         </button>
         <h1>{{totalprice}}</h1>
+        <h1>{{gettotalprice()}}</h1>
+        <input type="text" v-model='country'>
     </div>
 </template>
 <script>
@@ -27,6 +29,7 @@ export default {
       name: "anand",
       firstname: "test",
       lastname: "user",
+      country : '',
       items: [
         {
           id: 1,
@@ -46,11 +49,24 @@ export default {
       ],
     };
   },
+  // methods are not cached
+  methods : {
+    gettotalprice() {
+      console.log("total methods")
+      return this.items.reduce(
+        (total, curr) => (total = total + curr.price),
+        0
+      );
+    },
+  },
+  // computed property is cached
+  //  keeps in cache when there is change in UI
   computed: {
     fullname() {
       return `${this.firstname} ${this.lastname}`;
     },
     totalprice() {
+      console.log("computed property")
       return this.items.reduce(
         (total, curr) => (total = total + curr.price),
         0
