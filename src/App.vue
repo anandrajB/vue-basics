@@ -14,6 +14,7 @@
       <li><router-link :to="{ name: 'day8' }">Day8</router-link></li>
       <li><router-link :to="{ name: 'day9' }">Day9</router-link></li>
       <li><router-link :to="{ name: 'provide' }">Provide</router-link></li>
+      <li><router-link :to="{ name: 'day11' }">Day11</router-link></li>
     </ul>
     <router-view />
   </div>

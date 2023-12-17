@@ -66,6 +66,11 @@ const routes = [
         name: 'provide',
         component: () => import('@/views/Provide.vue'),
     },
+    {
+        path: '/day11',
+        name: 'day11',
+        component: () => import('@/views/Day11.vue'),
+    },
 ]
 
 const router = createRouter({
