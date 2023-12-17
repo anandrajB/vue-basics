@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "utils-function",
+  name: "about",
   data() {
     return {
       greet: "hello",

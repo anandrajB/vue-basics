@@ -41,6 +41,31 @@ const routes = [
         name: 'modify',
         component: () => import('@/views/Modifier.vue'),
     },
+    {
+        path: '/day6',
+        name: 'day6',
+        component: () => import('@/views/Day6.vue'),
+    },
+    {
+        path: '/day7',
+        name: 'day7',
+        component: () => import('@/views/Day7.vue'),
+    },
+    {
+        path: '/day8',
+        name: 'day8',
+        component: () => import('@/views/Day8.vue'),
+    },
+    {
+        path: '/day9',
+        name: 'day9',
+        component: () => import('@/views/Day9.vue'),
+    },
+    {
+        path: '/provide',
+        name: 'provide',
+        component: () => import('@/views/Provide.vue'),
+    },
 ]
 
 const router = createRouter({

@@ -19,6 +19,14 @@
         <h1>{{totalprice}}</h1>
         <h1>{{gettotalprice()}}</h1>
         <input type="text" v-model='country'>
+        <!-- when using for and if using template tag -->
+        <template v-for = 'item in items' :key=item>
+          <div>
+            <h1 v-if = "item.price > 100">{{item.title}} {{item.price}}</h1>
+          </div>
+        </template>
+
+        <h1 v-for = 'item in expensive' :key = 'item.id'> the data is {{item.title}}</h1>
     </div>
 </template>
 <script>
@@ -38,13 +46,13 @@ export default {
         },
         {
           id: 2,
-          title: "TVs",
-          price: 100,
+          title: "fridge",
+          price: 200,
         },
         {
           id: 3,
-          title: "TVss",
-          price: 100,
+          title: "towel",
+          price: 300,
         },
       ],
     };
@@ -72,6 +80,11 @@ export default {
         0
       );
     },
+    expensive(){
+      return this.items.filter(
+        item => item.price > 100
+      )
+    }
   },
 };
 </script>
