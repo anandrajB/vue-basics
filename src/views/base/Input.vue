@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- taking the value from user -->
-        <!-- setting the value based on the user typed -->
+        <!-- setting the value based on the user typed to the day11.vue -->
         <input type="text"
         :value = modelValue 
         @input="$emit('update:modelValue' , $event.target.value)"
