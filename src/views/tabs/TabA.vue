@@ -1,15 +1,13 @@
 <template lang="">
     <div>
-        <slot></slot>
+        tab a content
     </div>
 </template>
 <script>
 export default {
-    name : 'ChildStyle'
+    name : 'TabA'
 }
 </script>
-<style scoped>
-   h3{
-    color: red;
-   }
+<style lang="">
+    
 </style>

@@ -1,8 +1,9 @@
 <template lang="">
-    <div>
-        <h3 >this is </h3>
-        <ChildStyleVue/>
-    </div>
+    <h3>this is base</h3>   
+    <ChildStyleVue>
+        <h3>this is a child</h3>
+    </ChildStyleVue>
+
 </template>
 <script>
 import ChildStyleVue from './base/ChildStyle.vue'
@@ -19,6 +20,9 @@ export default {
     }
 }
 </script>
-<style lang="">
-   
+<!-- use scoped for this custom css-->
+<style scoped>
+   h3{
+    color: blue;
+   }
 </style>

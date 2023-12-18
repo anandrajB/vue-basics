@@ -18,6 +18,8 @@
       <li><router-link :to="{ name: 'day12' }">Day12</router-link></li>
       <li><router-link :to="{ name: 'day13' }">Day13</router-link></li>
       <li><router-link :to="{ name: 'day14' }">Day14</router-link></li>
+      <li><router-link :to="{ name: 'day15' }">Day15</router-link></li>
+      <li><router-link :to="{ name: 'day16' }">Day16</router-link></li>
     </ul>
     <router-view />
   </div>
